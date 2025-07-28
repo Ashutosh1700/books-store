@@ -6,7 +6,7 @@ const ManageBook = () => {
     const [allBooks, setAllBooks] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/all-book')
+        fetch('https://books-store-hdu4.onrender.com/all-book')
             .then(res => res.json())
             .then(book => setAllBooks(book));
     }, [allBooks]);
@@ -14,7 +14,7 @@ const ManageBook = () => {
     // delete a book 
     const handleDelete = (id) => {
         console.log(id);
-        fetch(`http://localhost:5000/book/${id}`, {
+        fetch(`https://books-store-hdu4.onrender.com/book/${id}`, {
             method: "DELETE",
 
         })

@@ -39,7 +39,7 @@ const EditBook = () => {
         // console.log(UpdatebookData);
 
         //update the book data
-        fetch(`http://localhost:5000/book/${id}`,
+        fetch(`https://books-store-hdu4.onrender.com/book/${id}`,
             {
                 method: 'PATCH',
                 headers: { 'Content-type': 'application/json' },

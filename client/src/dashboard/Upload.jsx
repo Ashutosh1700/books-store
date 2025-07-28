@@ -36,7 +36,7 @@ const UploadBook = () => {
         console.log(bookData);
 
         // send data to database / mongodb server
-        fetch('http://localhost:5000/upload-book', {
+        fetch('https://books-store-hdu4.onrender.com/upload-book', {
             method: 'POST',
             headers: { 'Content-type': 'application/json' },
             body: JSON.stringify(bookData)
